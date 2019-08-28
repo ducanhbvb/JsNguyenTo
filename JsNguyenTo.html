@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nguyento</title>
+</head>
+<body>
+<script>
+    let number = parseInt(prompt("Nhập tổng số nguyên tố đầu tiên cần tim"));
+    let sum = 0;
+    let i = check = 2;
+    let j;
+    while (sum < number) {
+        for (j = (Math.floor(i / 2)); j > 1; j--) {
+            if (i % j === 0) {
+                check = 0;
+                break;
+            }
+        }
+        if (check === 2) {
+            sum++;
+            document.write(i+" ");
+        }    i++;
+        check=2;
+
+    }document.write("ketthuc");
+
+</script>
+</body>
+</html>
